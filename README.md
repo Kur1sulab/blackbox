@@ -1,13 +1,13 @@
 # blackbox
 
-黑盒安全测试技能集，给 AI Agent 用的外部攻击/渗透测试 playbook 合集，共 140 个技能，按攻击链组织。
+黑盒安全测试技能集，给 AI Agent 用的外部攻击/渗透测试 playbook 合集，共 144 个技能，按攻击链组织。
 
 不看源码的视角：从外部侦察和攻击面测绘，到漏洞利用、权限提升、横向移动。每个技能是一份独立 playbook（触发条件/操作步骤/工具命令/坑位备忘），Claude Code、Hermes 等支持 Skills 的 Agent 可以直接加载。
 
 
 ## 技能索引
 
-### 侦察与攻击面测绘（13）
+### 侦察与攻击面测绘（14）
 
 | 技能 | 说明 |
 |------|------|
@@ -24,6 +24,7 @@
 | [pt-techstack-identification](./pt-techstack-identification/) | OSINT-based technology stack identification. Routes to 6 domain sub-skil… |
 | [web-frontend-recon](./web-frontend-recon/) | 前端 JS 侦察与 API 面提取方法——SPA fallback 识别、webpack chunk 接口提取、统一鉴权特征识别、OAuth/S… |
 | [web-spa-recon](./web-spa-recon/) | SPA 前端侦察——从 Vue/React 单页应用提取真实 API 攻击面。识别 SPA fallback、拉取 JS chunk 提取接口定… |
+| [lan-device-recon](./lan-device-recon/) | Windows 内网设备枚举与路由器侦察（ARP/端口/网关指纹） |
 
 ### 注入类漏洞（26）
 
@@ -56,7 +57,7 @@
 | [hack-xxe-xml-external-entity](./hack-xxe-xml-external-entity/) | XXE playbook |
 | [pt-injection](./pt-injection/) | Injection vulnerability testing - SQL, NoSQL, OS Command, SSTI, XXE, and… |
 
-### Web 应用与客户端（19）
+### Web 应用与客户端（20）
 
 | 技能 | 说明 |
 |------|------|
@@ -79,6 +80,7 @@
 | [pt-server-side](./pt-server-side/) | Server-side vulnerability testing - SSRF, HTTP Request Smuggling, Path T… |
 | [pt-web-app-logic](./pt-web-app-logic/) | Web application logic testing - business logic flaws, race conditions, a… |
 | [web-app-security](./web-app-security/) | Web应用安全测试三柱法 — 基于Andrew Hoffman《Web Application Security 2nd》(O'Reilly 2… |
+| [django-drf-pentest](./django-drf-pentest/) | 黑盒测试 Django/DRF 后端（DEBUG 取证 / 越权矩阵 / 上传 / JWT 爆破） |
 
 ### 认证、授权与令牌（15）
 
@@ -194,7 +196,7 @@
 |------|------|
 | [pt-social-engineering](./pt-social-engineering/) | Social engineering testing - phishing, pretexting, vishing, and physical… |
 
-### 方法论、框架与实战（13）
+### 方法论、框架与实战（15）
 
 | 技能 | 说明 |
 |------|------|
@@ -211,6 +213,8 @@
 | [secknowledge-skill](./secknowledge-skill/) | Web+AI 安全测试知识库。融合 WooYun 88,636 案例 + 先知 L1-L4 方法论 + GAARM 173 风险 + OWASP… |
 | [security-repo-learning](./security-repo-learning/) | 安全仓库采购与深度学习工作流 |
 | [web-login-crypto-replica](./web-login-crypto-replica/) | 登录自动化需复刻 JS 加密链（RSAUtils/CAS）时用：node 跑真 JS 逐字节验证 Python 复刻 |
+| [go-pentest-workbench-ops](./go-pentest-workbench-ops/) | 构建与运维 Go + Docker Kali + Ollama 多模型渗透工作台 |
+| [security-agent-framework](./security-agent-framework/) | 构建 AI 驱动自动化渗透 Agent 框架（双模式 / 工具注册 / Docker Kali / Web 仪表盘） |
 
 ## 安装
 
